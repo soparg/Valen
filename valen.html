@@ -1,13 +1,4 @@
 <!DOCTYPE html>
-
-<html>
-<head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>Hello, World!</title>
-</head>
-<body>
-  <h1>
-    <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -30,28 +21,34 @@
     .container {
       text-align: center;
       z-index: 1;
+      padding: 20px;
     }
 
     h1 {
       color: #d63447; /* Romantic red */
-      font-size: 4rem;
+      font-size: 2.5rem; /* Smaller font size for mobile */
       margin-bottom: 20px;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     }
 
     .buttons {
       margin-top: 20px;
+      display: flex;
+      flex-direction: column; /* Stack buttons vertically on mobile */
+      align-items: center;
+      gap: 15px; /* Space between buttons */
     }
 
     button {
-      padding: 15px 30px;
-      font-size: 1.5rem;
+      padding: 12px 24px; /* Smaller padding for mobile */
+      font-size: 1.2rem; /* Smaller font size for mobile */
       border: none;
       border-radius: 50px;
       cursor: pointer;
-      margin: 0 10px;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 80%; /* Wider buttons for easier tapping */
+      max-width: 200px; /* Limit button width */
     }
 
     #yes {
@@ -61,7 +58,7 @@
 
     #yes:hover {
       background-color: #ff1493; /* Darker pink */
-      transform: scale(1.1);
+      transform: scale(1.05); /* Slight scale effect */
       box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
     }
 
@@ -73,7 +70,7 @@
 
     #no:hover {
       background-color: #d63447; /* Darker red */
-      transform: scale(1.1);
+      transform: scale(1.05); /* Slight scale effect */
       box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
     }
 
@@ -91,7 +88,7 @@
     .heart {
       position: absolute;
       color: #ff69b4; /* Hot pink */
-      font-size: 24px;
+      font-size: 20px; /* Smaller hearts for mobile */
       animation: float 6s infinite ease-in-out;
     }
 
@@ -109,8 +106,8 @@
     /* Confetti Animation */
     .confetti {
       position: absolute;
-      width: 10px;
-      height: 10px;
+      width: 8px; /* Smaller confetti for mobile */
+      height: 8px;
       background-color: #ff69b4;
       animation: confetti-fall 3s linear infinite;
       z-index: 2;
@@ -209,8 +206,5 @@
       }
     }
   </script>
-</body>
-</html>
-  </h1>
 </body>
 </html>
